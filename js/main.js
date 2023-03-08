@@ -38,7 +38,7 @@ function getPosition(position){
               document.querySelector('.rise').innerHTML = `Sun Rise: ` + sunRise.toLocaleTimeString('default')
               document.querySelector('.set').innerHTML = `Sunset: ` + sunSet.toLocaleTimeString('default')
               document.querySelector('.wind').innerHTML = `Wind: ` + data.wind.speed + ` MPH`
-              document.querySelector('.date').innerHTML = currDate.toLocaleDateString('default')
+              document.querySelector('.date').innerHTML = currDate.toDateString()
               document.querySelector('img').src = `http://openweathermap.org/img/wn/${icon}@2x.png`
               document.querySelector('.txtDesc').innerHTML = data.weather[0].main
             })
